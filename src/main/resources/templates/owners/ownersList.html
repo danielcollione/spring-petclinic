@@ -14,6 +14,7 @@
             <th>City</th>
             <th style="width: 120px">Telephone</th>
             <th>Pets</th>
+            <th>Online</th>
         </tr>
         </thead>
         <tbody>
@@ -24,6 +25,7 @@
               <td th:text="${owner.address}"/>
               <td th:text="${owner.city}"/>
               <td th:text="${owner.telephone}"/>
+              <td th:text="${owner.online}"/>
               <td><span th:each="pet : ${owner.pets}" th:text="${pet.name} "/></td>
           </tr>
         </tbody>
